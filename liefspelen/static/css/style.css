@@ -4,6 +4,12 @@
     align-content: center;
 }
 
+.menu a{
+    color: #FCA205;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 20;
+}
+
 .panel-heading {
     text-align: center;
 }
