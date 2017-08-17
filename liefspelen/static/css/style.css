@@ -1,4 +1,4 @@
-.body {
+.page-header {
     font-family: 'Fredericka the Great', cursive;
     text-align: center;
     align-content: center;
@@ -6,6 +6,9 @@
 
 .header {
     color: #FCA205;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    align-content: center;
 }
 
 h1 a {
@@ -14,10 +17,12 @@ h1 a {
 }
 
 h2 {
-    color: black;
+    color: #FCA205;
     font-family: 'Fredericka the Great', cursive;
-    font-size: 40;
+    text-align: center;
+    align-content: center;
 }
+
 
 
 h3 {
@@ -30,6 +35,9 @@ h3 {
 
 body a {
     color: #FCA205;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    align-content: center;
     font-size: 40;
 }
 
@@ -64,4 +72,10 @@ li a {
     text-align: left;
 }
 
+.row h2{
+    color: black;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: left;
+    align-content: center;
 
+}

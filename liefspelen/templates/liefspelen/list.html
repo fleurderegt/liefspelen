@@ -1,24 +1,13 @@
- {% load staticfiles %}
+ {% extends 'liefspelen/base.html' %}
 
-<html>
-    <head>
-        <title>Lief Spelen</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet"> 
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    </head>
-    <body class="body">
-       <div class="header">
-            <h1><a href="/">Lief Spelen</a></h1>
+{% block content %}
+
             <h2> {{ location }} </h2>
             <br>
             <h2>Maak een keus uit de volgende suggesties</h2>
             <br>
             <br>
-        </div>
- 
-              
+                      
         <div class="container">    
           <div class="row">
             <div class="col-sm-6">
@@ -26,7 +15,7 @@
 
                <ul >
                   <div class="list">
-                	{% for game in latest_games_list %}
+                  {% for game in latest_games_list %}
                        <li class="glyphicon glyphicon-heart-empty">
                        {% if request.path  == '/koken' %}
                            <a href="{% url 'liefspelen:recipe' game.id %}">{{ game.title }}</a>
@@ -50,5 +39,8 @@
               
            </div>
         </div>
-    </body>
-</html>
+        
+{% endblock %}
+   
+
+

@@ -1,20 +1,12 @@
-{% load staticfiles %}
+{% extends 'liefspelen/base.html' %}
 
-<html>
-    <head>
-        <title>Lief Spelen</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet"> 
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    </head>
-    <body class="body">
+{% block content %}
+
         <div class="header">
-            <h1><a href="/">Lief Spelen</a></h1>
             <h2>Waar ga je spelen?</h2>
         </div>
 
-              
+            
         <div class="container">    
           <div class="row">
              <div class="col-sm-2">
@@ -44,9 +36,14 @@
             </div>
           </div>
         </div>
+       
+{% endblock %}
+   
 
-	</body>
-</html>
+
+   
+        
+
 
 
 
