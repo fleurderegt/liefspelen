@@ -41,69 +41,69 @@ def binnen(request):
     return render(request, 'liefspelen/binnen.html', {})
 
 def tuin(request):
-    latest_games_list = Game.objects.filter(environments__env_name='Tuin')
+    latest_games_list = Game.objects.filter(environments__env_name='tuin')
     location = "In de tuin"
     context = {'latest_games_list': latest_games_list, 'location': location}
     return render(request, 'liefspelen/list.html', context)
 
 def bos(request):
-    latest_games_list = Game.objects.filter(environments__env_name='Bos')
+    latest_games_list = Game.objects.filter(environments__env_name='bos')
     location = "In het bos"
     context = {'latest_games_list': latest_games_list, 'location': location}
     return render(request, 'liefspelen/list.html', context)
 
 def strand(request):
-    latest_games_list = Game.objects.filter(environments__env_name='Strand')
+    latest_games_list = Game.objects.filter(environments__env_name='strand')
     location = "In het zand"
     context = {'latest_games_list': latest_games_list, 'location': location}
     return render(request, 'liefspelen/list.html', context)
 
 def schoolplein(request):
-    latest_games_list = Game.objects.filter(environments__env_name='Schoolplein')
+    latest_games_list = Game.objects.filter(environments__env_name='schoolplein')
     location = "Op de tegels"
     context = {'latest_games_list': latest_games_list, 'location': location}
     return render(request, 'liefspelen/list.html', context)
 
 def zwembad(request):
-    latest_games_list = Game.objects.filter(environments__env_name='Zwembad')
+    latest_games_list = Game.objects.filter(environments__env_name='zwembad')
     location = "Plons!"
     context = {'latest_games_list': latest_games_list, 'location': location}
     return render(request, 'liefspelen/list.html', context)
 
 def koken(request):
-    latest_games_list = Game.objects.filter(categories__cat_name='Koken')
+    latest_games_list = Game.objects.filter(categories__cat_name='koken')
     location = "Tussen potten en pannen"
     origin = request.path
     context = {'latest_games_list': latest_games_list, 'location': location, 'origin': origin}
     return render(request, 'liefspelen/list.html', context)
 
 def spelletjes(request):
-    latest_games_list = Game.objects.filter(categories__cat_name='Spelletjes')
+    latest_games_list = Game.objects.filter(categories__cat_name='spelletjes')
     location = "Tussen pionnen en dobbelstenen"
     context = {'latest_games_list': latest_games_list, 'location': location}
     return render(request, 'liefspelen/list.html', context)
 
 def gym_ideetjes(request):
-    latest_games_list = Game.objects.filter(categories__cat_name='Gym-ideetjes')
+    latest_games_list = Game.objects.filter(categories__cat_name='gym-ideetjes')
     location = "Tussen de lijnen"
     context = {'latest_games_list': latest_games_list, 'location': location}
     return render(request, 'liefspelen/list.html', context)
 
 
 def handwerken(request):
-    latest_games_list = Game.objects.filter(categories__cat_name='Handwerken')
+    latest_games_list = Game.objects.filter(categories__cat_name='handwerken')
     location = "Tussen de draadjes en naalden"
     context = {'latest_games_list': latest_games_list, 'location': location}
     return render(request, 'liefspelen/list.html', context)
 
 def werkbladen(request):
-    latest_games_list = Game.objects.filter(categories__cat_name='Werkbladen')
+    latest_games_list = Game.objects.filter(categories__cat_name='werkbladen')
     location = "Tussen cijfers en letters"
     context = {'latest_games_list': latest_games_list, 'location': location}
     return render(request, 'liefspelen/list.html', context)
 
 def knutselen(request):
-    latest_games_list = Game.objects.filter(categories__cat_name='Knutselen')
+    latest_games_list = Game.objects.filter(categories__cat_name='knutselen')
     location = "Tussen papiersnippers en lijmresten"
     context = {'latest_games_list': latest_games_list, 'location': location}
     return render(request, 'liefspelen/list.html', context)
