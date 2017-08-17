@@ -4,6 +4,10 @@
     align-content: center;
 }
 
+.panel-heading {
+    text-align: center;
+}
+
 .header {
     color: #FCA205;
     font-family: 'Fredericka the Great', cursive;
@@ -76,6 +80,4 @@ li a {
     color: black;
     font-family: 'Fredericka the Great', cursive;
     text-align: left;
-    align-content: center;
-
 }
