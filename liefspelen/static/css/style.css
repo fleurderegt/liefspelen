@@ -1,6 +1,6 @@
 .body {
-	font-family: 'Fredericka the Great', cursive;
-	text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
     align-content: center;
 }
 
@@ -13,6 +13,11 @@ h1 a {
     font-size: 80;
 }
 
+h2 {
+    color: black;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 40;
+}
 
 
 h3 {
@@ -24,41 +29,35 @@ h3 {
 
 
 body a {
-	color: #FCA205;
+    color: #FCA205;
     font-size: 40;
 }
 
 ul {
-  color : #3219AE ;
-  text-align: left;
-  margin: 0;
+    color : #3219AE ;
+    text-align: left;
+    margin: 0;
 }
 
 li a {
-  padding: 3px 0px 3px 10px;
-  font-family: 'Fanwood Text', serif;
-  font-size: 20px;
-  text-align: left;
-  margin: 0px;
-  color : #3219AE ;
+    padding: 3px 0px 3px 10px;
+    font-family: 'Fanwood Text', serif;
+    font-size: 20px;
+    text-align: left;
+    margin: 0px;
+    color : #3219AE ;
 }
 
-.detail {
+.row {
     color: black;
     text-align: left;
     padding: 3px 0px 3px 10px;
-}
-
-.glyphicon glyphicon-user{
-    font-size: 15px;
-}
-
-.characteristics {
     font-family: 'Fanwood Text', serif;
     font-size: 20;
 }
 
-    font-size: 20px;
+.glyphicon glyphicon-user{
+    font-size: 15px;
 }
 
 .col-sm-6{
