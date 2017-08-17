@@ -1,0 +1,68 @@
+.body {
+	font-family: 'Fredericka the Great', cursive;
+	text-align: center;
+    align-content: center;
+}
+
+.header {
+    color: #FCA205;
+}
+
+h1 a {
+    color: #FCA205;
+    font-size: 80;
+}
+
+
+
+h3 {
+    color : black ;
+    font-family: 'Fanwood Text', serif;
+    font-size: 20;
+}
+
+
+
+body a {
+	color: #FCA205;
+    font-size: 40;
+}
+
+ul {
+  color : #3219AE ;
+  text-align: left;
+  margin: 0;
+}
+
+li a {
+  padding: 3px 0px 3px 10px;
+  font-family: 'Fanwood Text', serif;
+  font-size: 20px;
+  text-align: left;
+  margin: 0px;
+  color : #3219AE ;
+}
+
+.detail {
+    color: black;
+    text-align: left;
+    padding: 3px 0px 3px 10px;
+}
+
+.glyphicon glyphicon-user{
+    font-size: 15px;
+}
+
+.characteristics {
+    font-family: 'Fanwood Text', serif;
+    font-size: 20;
+}
+
+    font-size: 20px;
+}
+
+.col-sm-6{
+    text-align: left;
+}
+
+

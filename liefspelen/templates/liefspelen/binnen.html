@@ -1,0 +1,53 @@
+{% load staticfiles %}
+
+<html>
+    <head>
+        <title>Lief Spelen</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet"> 
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body class="body">
+        <div class="header">
+            <h1><a href="/">Lief Spelen</a></h1>
+            <h2>Waar heb je zin in?</h2>
+        </div>
+
+              
+        <div class="container">    
+          <div class="row">
+             <div class="col-sm-4">
+             <div class="panel-heading"><a href="/koken">KOKEN</a></div>
+               <div class="panel-body"><a href="/koken"><img src="../static/images/koken.png" class="img-responsive img-rounded center-block" style="width:100%" alt="Image"></a></div>
+             </div>
+             <div class="col-sm-4">
+               <div class="panel-heading"><a href="/spelletjes">SPELLETJES</a></div>
+               <div class="panel-body"><a href="/spelletjes"><img src="../static/images/spelletjes.png" class="img-responsive img-rounded center-block" style="width:100%" alt="Image"></a></div>
+            </div>
+            <div class="col-sm-4"> 
+               <div class="panel-heading"><a href="/knutselen">KNUTSELEN</a></div>
+               <div class="panel-body"><a href="/knutselen"><img src="../static/images/knutselen.png" class="img-responsive img-rounded center-block" style="width:100%" alt="Image"></a></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+               <div class="panel-heading"><a href="/gym_ideetjes">GYM-IDEETJES</a></div>
+               <div class="panel-body"><a href="/gym_ideetjes"><img src="../static/images/gymzaal.png" class="img-responsive img-rounded center-block" style="width:100%" alt="Image"></a></div>
+            </div>
+            <div class="col-sm-4"> 
+               <div class="panel-heading"><a href="/handwerken">HANDWERKEN</a></div>
+               <div class="panel-body"><a href="/handwerken"><img src="../static/images/handwerken.png" class="img-responsive img-rounded center-block" style="width:100%" alt="Image"></a></div>
+            </div>
+            <div class="col-sm-4"> 
+               <div class="panel-heading"><a href="werkbladen">WERKBLADEN</a></div>
+               <div class="panel-body"><a href="/werkbladen"><img src="../static/images/werkbladen.png" class="img-responsive img-rounded center-block" style="width:100%" alt="Image"></a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+	</body>
+</html>
+
+

@@ -1,0 +1,52 @@
+{% load staticfiles %}
+
+<html>
+    <head>
+        <title>Lief Spelen</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet"> 
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body class="body">
+        <div class="header">
+            <h1><a href="/">Lief Spelen</a></h1>
+            <h2>Waar ga je spelen?</h2>
+        </div>
+
+              
+        <div class="container">    
+          <div class="row">
+             <div class="col-sm-2">
+             </div>
+             <div class="col-sm-4">
+               <div class="panel-heading"><a href="/tuin">TUIN</a></div>
+               <div class="panel-body"><a href="/tuin"><img src="../static/images/tuin.png" class="img-responsive img-rounded center-block" style="width:100%" alt="Image"></a></div>
+            </div>
+            <div class="col-sm-4"> 
+               <div class="panel-heading"><a href="/bos">BOS</a></div>
+               <div class="panel-body"><a href="/bos"><img src="../static/images/bos.png" class="img-responsive img-rounded center-block" style="width:100%" alt="Image"></a></div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+               <div class="panel-heading"><a href="/strand">STRAND</a></div>
+               <div class="panel-body"><a href="/strand"><img src="../static/images/strand.png" class="img-responsive img-rounded center-block" style="width:100%" alt="Image"></a></div>
+            </div>
+            <div class="col-sm-4"> 
+               <div class="panel-heading"><a href="/schoolplein">SCHOOLPLEIN</a></div>
+               <div class="panel-body"><a href="/schoolplein"><img src="../static/images/schoolplein.png" class="img-responsive img-rounded center-block" style="width:100%" alt="Image"></a></div>
+            </div>
+            <div class="col-sm-4"> 
+               <div class="panel-heading"><a href="zwembad">ZWEMBAD</a></div>
+               <div class="panel-body"><a href="/zwembad"><img src="../static/images/zwembad.png" class="img-responsive img-rounded center-block" style="width:100%" alt="Image"></a></div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+	</body>
+</html>
+
+
+

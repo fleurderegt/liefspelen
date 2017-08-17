@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Lief Spelen</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body class="body">
+        <h1>www.liefspelen.nl</h1>
+                                
+        <div class="detail"> 
+             
+            <div class="row">
+
+                
+            	<h2>
+            	<div class="col-sm-11"> 
+               	   <img src="../static/worksheets/{{ game.image.url }}">
+            	</div>
+				</h2>
+ 			</div>
+        </div>
+        
+
+
+    </body>
+</html>
+
+
+

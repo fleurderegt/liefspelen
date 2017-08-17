@@ -1,0 +1,78 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Lief Spelen</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body class="body">
+        <h1><a href="/">Lief Spelen</a></h1>
+        <div class="detail"> 
+
+            <div class="row">
+            	<h2>
+            	<div class="col-sm-1">
+            	<img src="../static/images/spelen.png" style="width:50%" class="img-rounded center-block" alt="Spelletje" />
+            	</div>
+            	<div class="col-sm-11"> 
+            	 <u> {{ game.title }} </u> 
+            	</div>
+				</h2>
+ 			</div>
+            
+            <div class="characteristics">
+            	<div class="row">
+            	    <div class="col-sm-1">
+            	 	</div>
+              		<div class="col-sm-1">
+            	 	    personen: 
+            	 	</div>
+            	 	<div class="col-sm-1">
+            	 	 	  {{game.min_players}} - {{game.max_players}}
+              		</div>
+              		<div class="col-sm-1">
+            	 		 leeftijd: 
+            	 	</div>
+            		<div class="col-sm-1">
+              		  	  {{game.min_age}} - {{game.max_age}}
+            		</div>
+            	</div> 
+            	<br>  
+                <div class="row">
+                    <div class="col-sm-1">
+            	 	</div>
+               		<div class="col-sm-1">
+            			materiaal:  
+            		</div>
+             		<div class="col-sm-7">
+		       	 		{% for mat in game.materials.all %}
+            	       		 {{ mat|lower }} <br>
+            	 		{% endfor %}
+            	 	</div>
+            	 	
+            	</div>
+            	<br>
+           		<div class="row">
+           		    <div class="col-sm-1">
+            	 	</div>
+     		       	<div class="col-sm-11">
+                   
+     		       	    {% for step in game.steps_as_list %}
+    						 <li> {{ step}} </li>
+						{% endfor %}
+
+					</div>
+               	</div> 
+			</div>
+        </div>
+        
+
+
+    </body>
+</html>
+
+
+
