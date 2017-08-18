@@ -11,7 +11,7 @@ urlpatterns = [
     url(r'^(?P<game_id>[0-9]+)/$', views.detail, name='detail'),
     url(r'^(?P<game_id>[0-9]+)/recipe$', views.recipe, name='recipe'),
     url(r'^(?P<game_id>[0-9]+)/worksheet$', views.worksheet, name='worksheet'),
-  
+    url(r'^suggestion$', views.suggestion, name='suggestion'),
     url(r'^buiten$', views.buiten, name='buiten'),
     url(r'^binnen$', views.binnen, name='binnen'),
     url(r'^tuin$', views.tuin, name='tuin'),

@@ -2,10 +2,11 @@ from django.shortcuts import render
 from django.http import Http404
 from django.db.models import Q
 from django.template import RequestContext
-
-
+from django.utils import timezone
+from django.shortcuts import redirect
 
 from .models import Game, Environment
+from .forms import GameForm
 
 def index(request):
     latest_games_list = Game.objects.order_by('-pub_date')[:5]
@@ -32,6 +33,20 @@ def worksheet(request, game_id):
     except Game.DoesNotExist:
         raise Http404("Werkblad is niet gevonden")
     return render(request, 'liefspelen/detail_worksheet.html', {'game': game})  
+
+def suggestion(request):
+    if request.method == "POST":
+        form = GameForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.pub_date = timezone.now()
+            form.save()
+            form.save_m2m()
+            game = Game.objects.get(pk=post.pk)
+            return render(request, 'liefspelen/detail.html', {'game': game})  
+    else:
+        form = GameForm()
+    return render(request, 'liefspelen/suggestion.html', {'form': form})
 
 
 def buiten(request):
