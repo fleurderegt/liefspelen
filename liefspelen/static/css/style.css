@@ -21,11 +21,20 @@
     align-content: center;
 }
 
-form input[type="text"] {
-    border: 1px solid #FCA205;
+.formfields {
+     color: red;
+     font-family: 'Fredericka the Great', cursive;
 }
 
+
 form input[type="submit"] {
+    border: 1px solid #FCA205;
+    background-color: #FCA205;
+    color: white;
+}
+
+form button[type="submit"] {
+    font-family: 'Fredericka the Great', cursive;
     border: 1px solid #FCA205;
     background-color: #FCA205;
     color: white;

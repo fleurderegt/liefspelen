@@ -2,10 +2,69 @@
 
 {% block content %}
 
-<h3>Spelsuggestie:</h3>
     <form method="POST" class="game-form">{% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Verstuur</button>
+    <div class='formfields'>
+    	<div class='row'>
+    		<div class='col-sm-2'>  		
+    		</div>
+    		<div class='col-sm-10'>  		
+    		Naam van het spel {{ form.title }}
+    		</div>
+
+    	</div>
+    	<div class='row'>
+    		<div class='col-sm-2'>  		
+    		</div>
+    		<div class='col-sm-3'>  		
+				Wat is de bedoeling?
+    			<br>
+    	    	{{ form.text }}
+    	    </div>
+    	    <div class='col-sm-1'>  		
+    			Categorie
+    			<br>
+    			{{ form.categories }}
+    		</div>
+    		<div class='col-sm-1'>  		
+    			Tags
+    			<br>
+    			{{ form.tags }}
+    		</div>
+    		<div class='col-sm-1'>  		
+    			Seizoen
+    			<br>
+    			{{ form.seasons }}
+    		</div>
+    		<div class='col-sm-1'>  		
+    			Omgeving
+    			<br>
+    			{{ form.environments }}
+    		</div>
+    		<div class='col-sm-1'>  		
+    			Materiaal
+    			<br>
+    			{{ form.materials }}
+    		</div>
+    		<div class='col-sm-5'>  	
+    			<br>	
+    			Van {{ form.min_age }} tot {{ form.max_age }} jaar
+    			<br>
+    			<br>	
+    			Voor {{ form.min_players }} tot {{ form.max_players }} personen 
+    		</div>
+        	</div> 	
+    	<div class='row'>
+    		<div class='col-sm-2'>  		
+    		</div>
+    		<div class='col-sm-10'>  
+    		<br>		
+    		<button type="submit">Verstuur</button>	
+    		</div>
+    	</div> 	
+    	
+    </div>
+   
     </form>
+
 {% endblock %}
  

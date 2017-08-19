@@ -57,10 +57,11 @@ def suggestion(request):
             form.save_m2m()
             game = Game.objects.get(pk=post.pk)
             return render(request, 'liefspelen/detail.html', {'game': game})  
+        else:
+            return HttpResponse("Suggestion niet valid")
     else:
         form = GameForm()
     return render(request, 'liefspelen/suggestion.html', {'form': form})
-
 
 def buiten(request):
     return render(request, 'liefspelen/buiten.html', {})
