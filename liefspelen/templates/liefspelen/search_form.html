@@ -1,0 +1,31 @@
+{% extends 'liefspelen/base.html' %}
+
+{% block content %}
+         <div class="header">
+            <h2>We hebben de volgende spellen gevonden:</h2>
+        </div>
+
+         <div class="container">    
+          <div class="row">
+            <div class="col-sm-6">
+               {% if search_list %}
+
+               <ul >
+                  <div class="list">
+                  {% for game in search_list %}
+                       <li class="glyphicon glyphicon-heart-empty">
+                       <a href="{% url 'liefspelen:detail' game.id %}">{{ game.title }}</a>
+                       </li>
+                  {% endfor %}
+                  </div>
+              </ul>
+              
+              {% else %}
+                   <p>Er zijn geen spellen gevonden.</p>
+              {% endif %}
+              
+           </div>
+        </div>
+
+{% endblock %}
+   

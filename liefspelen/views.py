@@ -2,9 +2,10 @@ from django.shortcuts import render
 from django.http import Http404
 from django.db.models import Q
 from django.template import RequestContext
+from django.http import HttpResponse
 from django.utils import timezone
 from django.shortcuts import redirect
-
+from django.db.models import Q
 from .models import Game, Environment
 from .forms import GameForm
 
@@ -33,6 +34,18 @@ def worksheet(request, game_id):
     except Game.DoesNotExist:
         raise Http404("Werkblad is niet gevonden")
     return render(request, 'liefspelen/detail_worksheet.html', {'game': game})  
+
+def search(request):
+    if 'q' in request.GET and request.GET['q']:
+        q = request.GET['q']
+        search_list = Game.objects.filter(title__icontains=q)
+        context = {'search_list': search_list}
+        return render(request, 'liefspelen/search_form.html', context)
+    else:
+        return HttpResponse("Wat zoek je?")
+
+def search_form(request):
+    return render(request, 'liefspelen/search_form.html')
 
 def suggestion(request):
     if request.method == "POST":

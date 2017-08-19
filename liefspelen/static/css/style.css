@@ -21,6 +21,25 @@
     align-content: center;
 }
 
+form input[type="text"] {
+    border: 1px solid #FCA205;
+}
+
+form input[type="submit"] {
+    border: 1px solid #FCA205;
+    background-color: #FCA205;
+    color: white;
+}
+
+.inputtext {
+    color: #FCA205;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+    align-content: center;
+}
+
+
+
 h1 a {
     color: #FCA205;
     font-size: 80;
